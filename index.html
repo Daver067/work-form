@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" defer></script>
+    <title>CoB Work Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <ul>
+            <fieldset>
+                <legend>Internal Order Numbers</legend>
+                <br>
+                    <li>
+                        <label for="chargeNumber">Charge Number:</label>
+                        <input type="number" name="chargeNumber" id="chargeNumber">
+                    </li>
+                
+                    <li>
+                        <label for="workOrderNumber">Work Order Number:</label>
+                        <input type="number" name="workOrderNumber" id="workOrderNumber">
+                    </li>
+                
+                    <li>
+                        <label for="serviceRequestNumber">Service Request Number:</label>
+                        <input type="number" name="serviceRequestNumber" id="serviceRequestNumber">
+                    </li>
+                    <li>
+                        <label for="lsNumbers">LS numbers Involved:</label>
+                        <textarea name="lsNumbers" id="lsNumbers"></textarea>
+                    </li>
+                    <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Work Done</legend>
+                <br>
+                <li>
+                    <label for="location">Location:</label>
+                    <textarea name="location" id="location"></textarea>
+                </li>
+
+                <li>
+                    <label for="problemDescribed">Problem Described:</label>
+                    <textarea name="problemDescribed" id="problemDescribed"></textarea>
+                </li>
+
+                <li>
+                    <label for="issueFound">Issue Found:</label>
+                    <textarea name="issueFound" id="issueFound"></textarea>
+                </li>
+
+                <li>
+                    <label for="workCompleted">Work Completed:</label>
+                    <textarea name="workCompleted" id="workCompleted"></textarea>
+                </li>
+
+                <li>
+                    <label for="materialUsed">Material Used:</label>
+                    <textarea name="materialUsed" id="materialUsed"></textarea>
+                </li>
+                <br>
+                <li>
+                    <fieldset>
+                
+                    
+                        <legend>Further Work Required?</legend>
+                        <div class="radio">
+                            <input type="radio" name="furtherWorkRequired" id="Yes">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="furtherWorkRequired" id="No" checked>
+                            <label for="No">No</label>
+                        </div>
+                    </fieldset>
+                </li>
+                <br>
+                <li>
+                    <label for="describeRemainingWork">Describe Remaining Work:</label>
+                    <textarea name="describeRemainingWork" id="describeRemainingWork"></textarea>
+                </li>
+                    
+                    <br>
+            </fieldset>
+                    <br>
+            <fieldset>
+                <legend>Dates and Workers</legend>
+                <br>
+                <li>
+                    <label for="requestedBy">Requested by:</label>
+                    <input type="text" name="requestedBy" id="requestedBy">
+                </li>
+
+                <li>
+                    <label for="dateRecieved">Date Recieved:</label>
+                    <input type="date" name="dateRecieved" id="dateRecieved">
+                </li>
+
+                <li>
+                    <label for="timeDelegated">Time Delegated:</label>
+                    <input type="time" name="timeDelegated" id="timeDelegated">
+                </li>
+
+                <li>
+                    <label for="dateArrived">Date Arrived:</label>
+                    <input type="date" name="dateArrived" id="dateArrived">
+                </li>
+
+                <li>
+                    <label for="timeArrived">Time Arrived:</label>
+                    <input type="time" name="timeArrived" id="timeArrived">
+                </li>
+
+                <li>
+                    <label for="dateCompleted">Date Competed:</label>
+                    <input type="date" name="dateCompleted" id="dateCompleted">
+                </li>
+
+                <li>
+                    <label for="timeCompleted">Time Completed:</label>
+                    <input type="time" name="timeCompleted" id="timeCompleted">
+                </li>
+
+                <li>
+                    <label for="completedBy">Job Completed By:</label>
+                    <select name="completedBy">
+                        <option value="Dave">Dave</option>
+                        <option value="Iain">Iain</option>
+                        <option value="Felice">Felice</option>
+                        <option value="Corey">Corey</option>
+                        <option value="Justin">Justin</option>
+                        <option value="Jason">Jason</option>
+                        <option value="Allan">Allan</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="hoursWorked">Hours Worked:</label>
+                    <input type="number" name="hoursWorked" id="hoursWorked">
+                </li>
+
+                <br>
+                <fieldset>
+                    <legend>Additional Crew Members:</legend>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Dave">
+                        <label for="Dave">Dave</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Iain">
+                        <label for="Iain">Iain</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Felice">
+                        <label for="Felice">Felice</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Corey">
+                        <label for="Corey">Corey</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Justin">
+                        <label for="Justin">Justin</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Jason">
+                        <label for="Jason">Jason</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="additionalCrewMembers" id="Allan">
+                        <label for="Allan">Allan</label>
+                    </div>
+                </fieldset>
+                <br>
+            </fieldset>
+            <br>
+
+            <li>
+                <label for="additionalComments">Additional Comments:</label>
+                <textarea name="additionalComments" id="additionalComments"> </textarea>
+            </li>
+
+        </ul>
+        <button type="submit">Submit Form!</button>
+    </form>
+    
+</body>
+</html>
